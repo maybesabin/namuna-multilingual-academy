@@ -32,6 +32,8 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-2">
                     <Image
+                        width={600}
+                        height={600}
                         className="md:h-14 md:w-14 h-10 w-10 object-cover rounded-md border border-neutral-200"
                         src={logo}
                         alt="Namuna Multilingual Academy logo"

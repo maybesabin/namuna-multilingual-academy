@@ -1,6 +1,7 @@
 import Separator from "./Separator"
 import placeholder from "../../public/placeholder.png"
 import Link from "next/link"
+import Image from "next/image"
 
 const LatestNews = () => {
 
@@ -11,7 +12,7 @@ const LatestNews = () => {
             description:
                 "Our team has published groundbreaking research on sustainable farming techniques that increase yield by 30%.",
             date: "May 10, 2025",
-            image: "https://media.istockphoto.com/id/1066324992/photo/graduation-day.jpg?s=612x612&w=0&k=20&c=cleRpjTZbo430AbH-luZFYMMNqPwhwyTnFgWMbi_AiI=",
+            image: "",
         },
         {
             id: 2,
@@ -40,10 +41,13 @@ const LatestNews = () => {
                     key={item.id}
                     className="p-2 flex items-center gap-5"
                 >
-                    <img
+                    <Image
+                        width={600}
+                        height={600}
                         style={{ opacity: `${item.image ? 1 : 0.5}` }}
                         className="md:size-20 size-14 object-cover rounded-lg"
                         src={item.image || placeholder.src}
+                        alt={placeholder.src}
                     />
                     <div className="flex flex-col items-center text-blue-600 bg-blue-50 md:px-4 px-3 md:py-2 py-1.5 rounded-md">
                         <span className="md:text-2xl text-lg font-semibold">

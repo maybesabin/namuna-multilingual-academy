@@ -8,6 +8,7 @@ const Hero = () => {
     return (
         <div className="flex items-center justify-center w-full relative">
             <Image
+                style={{ width: '100%', height: '90svh' }}
                 className="w-full h-[90svh] object-cover brightness-50"
                 src={image}
                 alt="Namuna Multilingual Academy"
