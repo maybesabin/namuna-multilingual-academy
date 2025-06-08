@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function contacts() {
   const members = [
@@ -33,7 +34,9 @@ export default function contacts() {
             className="relative flex flex-col flex-wrap rounded-lg p-4"
             key={idx}
           >
-            <img
+            <Image
+              width={400}
+              height={600}
               className="h-92 rounded-xl"
               src={item.image}
               alt={item.name + "image"}

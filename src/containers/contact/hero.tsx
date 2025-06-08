@@ -11,8 +11,8 @@ export default function contact() {
         alt="Namuna Multilingual Academy"
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white px-4 text-center">
-        <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-        <p className="text-xl mb-6 max-w-2xl mx-auto">
+        <h2 className="sm:text-4xl text-2xl font-bold mb-4">Get In Touch</h2>
+        <p className="text-sm sm:text-xl sm:b-6 sm:max-w-2xl mx-auto">
           We're here to answer your questions and help you learn more about Us.
           Reach out to us anytime!
         </p>
