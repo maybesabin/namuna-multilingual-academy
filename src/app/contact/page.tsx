@@ -1,14 +1,12 @@
 import React from "react";
-import Hero from "../../components/Hero"
-import Form from "../../containers/Contact/Form";
-import GetInTouch from "../../containers/Contact/GetInTouch";
+import Hero from "../../containers/About/Hero";
+import Form from "../../containers/contact/form";
+import GetInTouch from "../../containers/contact/GetInTouch";
 
 export default function Page() {
   return (
     <>
-      <Hero
-        text=" We're here to answer your questions and help you learn more about Us. Reach out to us anytime!"
-      />
+      <Hero text=" We're here to answer your questions and help you learn more about Us. Reach out to us anytime!" />
       <div className="w-full flex items-center justify-center mt-12">
         <div className="xl:w-[85rem] w-full md:px-6 px-3 flex flex-col items-center gap-6">
           <div className="flex lg:flex-row flex-col items-start gap-6">
@@ -17,7 +15,12 @@ export default function Page() {
           </div>
 
           {/* Map */}
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901387.4223294647!2d81.76062546510204!3d28.053662226540087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39943d1035fcc47b%3A0x8e11a9b5adb38a9f!2sN.C%20Namuna%20English%20School!5e0!3m2!1sen!2snp!4v1746857025416!5m2!1sen!2snp" className="border-0 w-full h-64" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901387.4223294647!2d81.76062546510204!3d28.053662226540087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39943d1035fcc47b%3A0x8e11a9b5adb38a9f!2sN.C%20Namuna%20English%20School!5e0!3m2!1sen!2snp!4v1746857025416!5m2!1sen!2snp"
+            className="border-0 w-full h-64"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
 
           {/* Card */}
           <div className="w-full rounded-lg bg-blue-600 text-white p-6 flex flex-col items-center gap-2 text-center">
@@ -25,7 +28,8 @@ export default function Page() {
               Need Immediate Assistance?
             </h3>
             <p className="md:text-sm text-xs text-neutral-200">
-              For urgent matters, please call our main office during business hours.
+              For urgent matters, please call our main office during business
+              hours.
             </p>
             <button className="mt-2 cursor-pointer bg-white text-blue-600 transition-all font-medium rounded-md md:text-sm text-xs px-4 py-2.5">
               Call Now: (+977) 9829100636
