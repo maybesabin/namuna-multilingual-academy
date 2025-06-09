@@ -1,12 +1,12 @@
+import Hero from "../../components/Hero";
 import React from "react";
-import Hero from "@/containers/about/hero";
-import Members from "@/containers/about/members";
+import Members from "@/containers/About/Members"
 
 export default function page() {
   return (
-    <div>
-      <Hero />
+    <>
+      <Hero text="" />
       <Members />
-    </div>
+    </>
   );
 }
