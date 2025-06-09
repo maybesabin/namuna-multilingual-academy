@@ -30,8 +30,13 @@ export async function POST(req: Request) {
         )
 
         return NextResponse.json({ message: "Logged in successfully!", token })
-    } catch (err: any) {
-        console.log(err.message)
-        return NextResponse.json({ message: err.message }, { status: 500 })
+    } catch (err: unknown) {
+        if (err instanceof Error) {
+            console.log(err.message);
+            return NextResponse.json({ message: err.message }, { status: 500 });
+        } else {
+            console.log("Unknown error occurred");
+            return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+        }
     }
 }

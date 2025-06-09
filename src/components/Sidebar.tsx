@@ -30,6 +30,8 @@ const Sidebar = ({
             <div className="w-full flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <Image
+                        width={600}
+                        height={600}
                         className="h-14 w-14 object-cover rounded-md border border-neutral-200"
                         src={logo}
                         alt="Namuna Multilingual Academy logo"

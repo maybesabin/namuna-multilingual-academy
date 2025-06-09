@@ -4,6 +4,7 @@ import principal from "../../public/principal.jpg"
 import logo from "../../public/logo.jpeg"
 import { CheckCircle, Users } from "lucide-react"
 import Image from "next/image"
+import placeholder from "../../public/placeholder.png"
 
 const AboutUs = () => {
     const facilities = [
@@ -16,10 +17,12 @@ const AboutUs = () => {
             <div className="xl:w-[85rem] w-full md:px-6 px-3 flex lg:flex-row flex-col lg:items-center items-start lg:gap-12 gap-6">
                 <div className="lg:w-1/2 w-full flex flex-col items-start gap-4 lg:border border-neutral-100 rounded-lg relative">
                     <div className="flex items-center gap-2 lg:px-5 pt-4">
-                        <img
+                        <Image
+                            width={600}
+                            height={500}
                             className="md:size-14 size-12"
                             src={logo.src}
-                            alt=""
+                            alt={placeholder.src}
                         />
                         <div className="flex flex-col items-start">
                             <h3 className="font-semibold md:text-lg text-sm">Bishnu Hamal</h3>
