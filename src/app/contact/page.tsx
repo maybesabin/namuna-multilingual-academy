@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../../components/Hero"
-import Form from "../../containers/Contact/Form";
-import GetInTouch from "../../containers/Contact/GetInTouch";
+import Form from "../../containers/contact/form";
+import GetInTouch from "../..//containers/contact/GetInTouch";
 
 export default function Page() {
   return (
