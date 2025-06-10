@@ -36,7 +36,10 @@ export default function Faculty() {
 
         <div className="flex flex-col md:flex-row justify-center gap-4 gap-y-7">
           {administrator.map((member) => (
-            <div className="flex flex-col gap-y-5 items-center text-center grow border border-blue-300 rounded-lg p-10 bg-white">
+            <div
+              className="flex flex-col gap-y-5 items-center text-center grow border border-blue-300 rounded-lg p-10 bg-white"
+              key={member.name}
+            >
               <Image
                 src={member.img}
                 alt={member.name + "image"}
